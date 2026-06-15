@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Mini Envasadora Automática</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="panel">
+<h1>MINI ENVASADORA AUTOMÁTICA</h1>
+
+<div id="alerta" class="alerta">⚠ ALERTA: Exceso de botellas detenidas ⚠</div>
+
+<div class="info">
+<div>Estado: <span id="estado">Detenido</span></div>
+<div>Producción: <span id="contador">0</span></div>
+<div>Botellas esperando: <span id="espera">0</span></div>
+</div>
+
+<div class="tanque">
+<div class="agua"></div>
+<div class="boquilla"></div>
+</div>
+
+<div class="cinta" id="cinta">
+<div class="botella"></div>
+<div class="botella"></div>
+<div class="botella"></div>
+<div class="botella"></div>
+<div class="botella"></div>
+</div>
+
+<div class="botones">
+<button onclick="iniciar()">Iniciar</button>
+<button onclick="detener()">Detener</button>
+<button onclick="reiniciar()">Reiniciar</button>
+<button onclick="agregarBotella()">Simular Atasco</button>
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
